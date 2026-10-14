@@ -12,10 +12,10 @@ env/
 *.joblib
 *.pkl
 *.h5
+# Downloaded/generated datasets and trained models are reproducible via each
+# project's download_data.py / train.py, so they are never committed.
 models/
-**/data/raw/
-**/data/*.csv
-**/data/*.csv.gz
+data/
 
 # OS / editor
 .DS_Store
