@@ -16,6 +16,9 @@ env/
 # project's download_data.py / train.py, so they are never committed.
 models/
 data/
+# RepoMind saved indexes and generated pentest reports
+index/
+report.md
 
 # OS / editor
 .DS_Store

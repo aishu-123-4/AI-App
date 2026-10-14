@@ -19,8 +19,8 @@ ML/Data-Science, Security/AppSec, and Software-Engineering internships.
 | 06 | _DocuMind (RAG Q&A)_ | AI / LLM | your docs | FAISS + Claude API | 🧭 Planned |
 | 07 | _WebRecon (vuln scanner)_ | Security / AppSec | — | requests, CLI | 🧭 Planned |
 | 08 | _CredCheck (breach auditor)_ | Security / AppSec | HIBP API | requests | 🧭 Planned |
-| 09 | _RepoMind_ | AI / LLM × SWE | any repo | RAG over code | 🧭 Planned |
-| 10 | _AI Security Pentest Agent_ | AI × Security | — | LLM agent | 🧭 Planned |
+| 09 | [RepoMind](./09-repomind) | AI / LLM × SWE | any repo | TF-IDF RAG + Claude | ✅ Complete |
+| 10 | [AI Security Pentest Agent](./10-ai-pentest-agent) | AI × Security | bundled lab | workflow graph + Claude | ✅ Complete |
 
 Each row links to a project folder with its own README, source, tests, and
 instructions. The roadmap below explains what each planned project will cover.
@@ -48,10 +48,13 @@ finish well:
   headers, cookie flags, TLS, and exposed files against **authorized** targets.
 - **08 · CredCheck** *(Security / AppSec)* — password strength + Have I Been
   Pwned k-anonymity breach check (password never leaves the machine).
-- **09 · RepoMind** *(AI / LLM × SWE)* — ask natural-language questions about a
-  code repository; RAG over source with symbol-aware chunking.
-- **10 · AI Security Pentest Agent** *(AI × Security)* — an LLM agent that runs a
-  guided, **authorized** recon/assessment workflow and writes up findings.
+- **09 · RepoMind** *(AI / LLM × SWE)* ✅ — ask natural-language questions about a
+  code repository; symbol-aware (`ast`) chunking, TF-IDF retrieval, and optional
+  Claude-generated answers (key-optional).
+- **10 · AI Security Pentest Agent** *(AI × Security)* ✅ — a phased
+  workflow-graph agent (recon → test-gen → scan → exploit → threat-model →
+  report) that runs OWASP Top 10 checks and **authorized** exploitation against a
+  bundled vulnerable lab, with LLM-generated test cases.
 
 ## Repository layout
 
